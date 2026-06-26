@@ -1,0 +1,36 @@
+# Node modules
+node_modules/
+**/node_modules/
+
+# Next.js build output
+.next/
+**/.next/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Database files
+*.sqlite
+*.sqlite3
+*.db
+
+# VS Code
+.vscode/
+
+# Production
+out/
+
+# Misc
+*.log

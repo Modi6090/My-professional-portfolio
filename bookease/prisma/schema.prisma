@@ -1,0 +1,84 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  password      String?
+  role          String    @default("USER")
+  appointments  Appointment[] @relation("UserAppointments")
+  staffBookings Appointment[] @relation("StaffAppointments")
+  accounts      Account[]
+  sessions      Session[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+
+
+model Service {
+  id          String        @id @default(cuid())
+  name        String
+  description String?
+  price       Float
+  duration    Int           // Duration in minutes
+  image       String?
+  appointments Appointment[]
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+}
+
+model Appointment {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation("UserAppointments", fields: [userId], references: [id], onDelete: Cascade)
+  staffId   String?
+  staff     User?    @relation("StaffAppointments", fields: [staffId], references: [id], onDelete: SetNull)
+  serviceId String
+  service   Service  @relation(fields: [serviceId], references: [id])
+  date      DateTime
+  status    String   @default("PENDING")
+  notes     String?
+  summary   String?  // AI Generated
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+
+
+// NextAuth Required Models
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}

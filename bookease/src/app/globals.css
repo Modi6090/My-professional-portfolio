@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Apple-inspired Light Theme */
+    --background: 0 0% 98%;      /* #fafafa */
+    --foreground: 0 0% 9%;       /* #171717 */
+    
+    --card: 0 0% 100%;           /* #ffffff */
+    --card-foreground: 0 0% 9%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 9%;
+    
+    /* Clean, professional blue accent */
+    --primary: 221 83% 53%;      /* #2563EB */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 0 0% 93%;       /* #ededed */
+    --secondary-foreground: 0 0% 9%;
+    
+    --muted: 0 0% 93%;
+    --muted-foreground: 0 0% 45%; /* #737373 */
+    
+    --accent: 0 0% 93%;
+    --accent-foreground: 0 0% 9%;
+    
+    --border: 0 0% 90%;          /* #e5e5e5 */
+    --input: 0 0% 90%;
+    --ring: 221 83% 53%;
+    
+    --radius: 1rem; /* Rounded components as requested */
+  }
+
+  .dark {
+    /* Apple-inspired Dark Theme */
+    --background: 0 0% 0%;       /* #000000 */
+    --foreground: 0 0% 98%;      /* #fafafa */
+    
+    --card: 0 0% 10%;            /* #1a1a1a */
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 98%;
+    
+    --primary: 217 91% 60%;      /* #3b82f6 */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 0 0% 15%;       /* #262626 */
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%; /* #a3a3a3 */
+    
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 98%;
+    
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased selection:bg-primary/20 selection:text-primary;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Glassmorphism Utilities */
+.glass {
+  @apply bg-white/70 dark:bg-black/70 backdrop-blur-xl border border-white/20 dark:border-white/10;
+}
