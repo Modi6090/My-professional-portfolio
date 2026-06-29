@@ -11,7 +11,7 @@ export default function Portfolio() {
       tech: ["Next.js 15", "PostgreSQL", "Framer Motion"],
       description: "A premium appointment booking platform featuring interactive calendars, admin dashboards, and AI insights.",
       color: "from-blue-600 to-indigo-900",
-      link: "http://localhost:3002"
+      link: "https://bookease-sand.vercel.app"
     },
     {
       title: "ServeFlow - Restaurant POS",
@@ -19,7 +19,7 @@ export default function Portfolio() {
       tech: ["Next.js 15", "SQLite", "Tailwind CSS"],
       description: "Live restaurant management system with an interactive digital menu, real-time cart, and a Kanban kitchen queue.",
       color: "from-orange-500 to-red-800",
-      link: "http://localhost:3003"
+      link: "https://serveflow-sand.vercel.app"
     },
     {
       title: "E-commerce Store",
