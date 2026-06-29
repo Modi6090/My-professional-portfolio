@@ -27,7 +27,7 @@ export default function Portfolio() {
       tech: ["Shopify", "React", "Stripe"],
       description: "High-performance online store with advanced filtering, cart management, and fast checkout.",
       color: "from-purple-500 to-pink-500",
-      link: "#"
+      link: "https://aura-ecommerce-ashy.vercel.app/"
     },
     {
       title: "Resume Booster AI",
