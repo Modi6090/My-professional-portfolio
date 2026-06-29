@@ -19,7 +19,7 @@ export default function Portfolio() {
       tech: ["Next.js 15", "SQLite", "Tailwind CSS"],
       description: "Live restaurant management system with an interactive digital menu, real-time cart, and a Kanban kitchen queue.",
       color: "from-orange-500 to-red-800",
-      link: "https://serveflow-sand.vercel.app"
+      link: "https://serverflow.vercel.app/"
     },
     {
       title: "E-commerce Store",
