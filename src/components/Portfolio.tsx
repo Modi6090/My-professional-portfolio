@@ -43,7 +43,7 @@ export default function Portfolio() {
       tech: ["Framer Motion", "React", "GSAP"],
       description: "A visually stunning portfolio showcasing high-end interior design projects with smooth animations.",
       color: "from-amber-400 to-orange-500",
-      link: "#"
+      link: "https://jd-designing-studios.vercel.app/"
     },
     {
       title: "Gym & Fitness Portal",
