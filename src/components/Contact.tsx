@@ -72,17 +72,17 @@ export default function Contact() {
                   </div>
                 </a>
                 
-                <a href="tel:+919876543210" className="flex items-center gap-4 text-gray-600 hover:text-primary transition-colors">
+                <a href="tel:+919102266990" className="flex items-center gap-4 text-gray-600 hover:text-primary transition-colors">
                   <div className="w-12 h-12 bg-blue-50 text-primary rounded-xl flex items-center justify-center shrink-0">
                     <Phone size={24} />
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900">Phone</div>
-                    +91 98765 43210
+                    +91 91022 66990
                   </div>
                 </a>
                 
-                <a href="https://wa.me/919876543210" className="flex items-center gap-4 text-gray-600 hover:text-green-600 transition-colors">
+                <a href="https://wa.me/919102266990" className="flex items-center gap-4 text-gray-600 hover:text-green-600 transition-colors">
                   <div className="w-12 h-12 bg-green-50 text-green-600 rounded-xl flex items-center justify-center shrink-0">
                     <MessageCircle size={24} />
                   </div>
@@ -139,7 +139,7 @@ export default function Contact() {
                     <input 
                       {...register("phone")}
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all"
-                      placeholder="+91 98765 43210"
+                      placeholder="+91 91022 66990"
                     />
                     {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone.message}</p>}
                   </div>

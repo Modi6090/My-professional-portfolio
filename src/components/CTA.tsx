@@ -29,8 +29,10 @@ export default function CTA() {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://wa.me/1234567890" // Placeholder
+                href="https://wa.me/919102266990"
                 className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 shadow-lg shadow-green-500/30 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <MessageCircle size={20} /> WhatsApp Me
               </motion.a>
