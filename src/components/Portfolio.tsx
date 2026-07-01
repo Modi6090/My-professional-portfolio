@@ -46,12 +46,12 @@ export default function Portfolio() {
       link: "https://jd-designing-studios.vercel.app/"
     },
     {
-      title: "Gym & Fitness Portal",
-      industry: "Fitness",
-      tech: ["React", "Node.js", "MongoDB"],
-      description: "Dynamic fitness center site featuring membership plans, class schedules, and trainer profiles.",
+      title: "Doctor's clinic",
+      industry: "Medical",
+      tech: ["Next.js", "Supabase", "shadcn"],
+      description: "Website for a doctor's clinic featuring appointment booking, patient records, and medical history.",
       color: "from-emerald-400 to-teal-500",
-      link: "#"
+      link: "https://"
     }
   ];
 
