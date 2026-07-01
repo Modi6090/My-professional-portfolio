@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { MonitorSmartphone, ShoppingCart, Store, Stethoscope, FileText, Globe } from "lucide-react";
+import Link from "next/link";
 
 export default function Services() {
   const trustBadges = [
@@ -13,31 +14,37 @@ export default function Services() {
       title: "Business Website",
       description: "Professional corporate websites that build trust and convert visitors into leads.",
       icon: <Globe className="w-6 h-6" />,
+      slug: "business-website",
     },
     {
       title: "E-commerce Website",
       description: "High-converting online stores with secure payments and inventory management.",
       icon: <ShoppingCart className="w-6 h-6" />,
+      slug: "e-commerce-website",
     },
     {
       title: "Doctor & Clinic Website",
       description: "Specialized websites for healthcare professionals with booking integrations.",
       icon: <Stethoscope className="w-6 h-6" />,
+      slug: "doctor-clinic-website",
     },
     {
       title: "Portfolio Website",
       description: "Showcase your work with stunning, interactive portfolio designs.",
       icon: <MonitorSmartphone className="w-6 h-6" />,
+      slug: "portfolio-website",
     },
     {
       title: "Catalogue Website",
       description: "Display your products elegantly without online checkout functionality.",
       icon: <Store className="w-6 h-6" />,
+      slug: "catalogue-website",
     },
     {
       title: "Landing Page",
       description: "Optimized single-page websites designed for high conversion rates.",
       icon: <FileText className="w-6 h-6" />,
+      slug: "landing-page",
     },
   ];
 
@@ -85,9 +92,9 @@ export default function Services() {
               <p className="text-gray-600 mb-6 leading-relaxed">
                 {service.description}
               </p>
-              <div className="flex items-center text-primary font-semibold group-hover:translate-x-2 transition-transform duration-300">
+              <Link href={`/services/${service.slug}`} className="inline-flex items-center text-primary font-semibold group-hover:translate-x-2 transition-transform duration-300">
                 Learn More <span className="ml-2">→</span>
-              </div>
+              </Link>
             </motion.div>
           ))}
         </div>
