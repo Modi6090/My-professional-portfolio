@@ -26,7 +26,7 @@ export default function CTA() {
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <motion.a
+              {/* <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 href="https://wa.me/919102266990"
@@ -35,7 +35,7 @@ export default function CTA() {
                 rel="noopener noreferrer"
               >
                 <MessageCircle size={20} /> WhatsApp Me
-              </motion.a>
+              </motion.a> */}
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
