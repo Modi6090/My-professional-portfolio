@@ -62,13 +62,13 @@ export default function Contact() {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
               
               <div className="space-y-6">
-                <a href="mailto:hello@jtwebstudio.com" className="flex items-center gap-4 text-gray-600 hover:text-primary transition-colors">
+                <a href="mailto:hello@modiwebstudios.com" className="flex items-center gap-4 text-gray-600 hover:text-primary transition-colors">
                   <div className="w-12 h-12 bg-blue-50 text-primary rounded-xl flex items-center justify-center shrink-0">
                     <Mail size={24} />
                   </div>
                   <div>
                     <div className="font-semibold text-gray-900">Email</div>
-                    hello@jtwebstudio.com
+                    hello@modiwebstudios.com
                   </div>
                 </a>
                 

@@ -5,17 +5,17 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "JT Web Studio | Modern Websites That Help Businesses Grow",
-  description: "We create fast, modern, mobile-friendly websites for businesses that want to grow online. Partner with JT Web Studio for premium digital experiences.",
+  title: "Modi Web studios | Modern Websites That Help Businesses Grow",
+  description: "We create fast, modern, mobile-friendly websites for businesses that want to grow online. Partner with Modi Web studios for premium digital experiences.",
   keywords: ["Web Developer", "Website Designer", "E-commerce Website Developer", "Portfolio Website Developer", "Business Website Developer"],
   openGraph: {
-    title: "JT Web Studio | Premium Digital Agency",
+    title: "Modi Web studios | Premium Digital Agency",
     description: "Modern websites that turn visitors into customers. Fast, mobile-friendly, and SEO-optimized.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "JT Web Studio | Modern Web Development",
+    title: "Modi Web studios | Modern Web Development",
     description: "Modern websites that turn visitors into customers.",
   },
 };

@@ -8,7 +8,7 @@ export default function Testimonials() {
     {
       name: "Dr. Pallavi Sharma",
       business: "SmileCare Dental Clinic",
-      review: "JT Web Studio transformed our clinic's online presence. We've seen a 40% increase in online appointments since the new website launched. Highly professional and fast.",
+      review: "Modi Web studios transformed our clinic's online presence. We've seen a 40% increase in online appointments since the new website launched. Highly professional and fast.",
       rating: 5,
     },
     {

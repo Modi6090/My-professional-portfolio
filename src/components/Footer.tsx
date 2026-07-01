@@ -14,7 +14,7 @@ export default function Footer() {
           
           <div className="col-span-2 lg:col-span-2">
             <Link href="/" className="text-2xl font-bold tracking-tighter text-white mb-6 block">
-              JT Web <span className="text-primary">Studio.</span>
+              Modi Web <span className="text-primary">studios.</span>
             </Link>
             <p className="text-gray-400 mb-6 max-w-sm">
               We build fast, modern, and high-converting websites for businesses that want to dominate their industry.
@@ -69,7 +69,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm">
-            &copy; {currentYear} JT Web Studio. All rights reserved.
+            &copy; {currentYear} Modi Web studios. All rights reserved.
           </p>
           <div className="text-gray-500 text-sm">
             Designed & Built with passion.

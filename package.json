@@ -1,7 +1,7 @@
 {
-  "name": "jt-web-studio-portfolio",
+  "name": "modi-web-studios-portfolio",
   "version": "1.0.0",
-  "description": "JT Web Studio Portfolio",
+  "description": "Modi Web studios Portfolio",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
